@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: #f7e59d;
+    margin-bottom: 110px;
+}
+footer {
+    background-color: #02473A;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: -100;
+}
+h6{
+    color: white;
+    font-size: 20px;
+}
