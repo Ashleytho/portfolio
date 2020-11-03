@@ -96,6 +96,7 @@ h6{
 }
 .content-image{
     padding: 10px;
+    box-align: right;
 }
 .content-text{
     padding: 10px;
