@@ -3,78 +3,82 @@ body {
     margin: 0;
     padding: 0;
     background-color:white;
+    font-family: Avenir, sans-serif;
+    background-image: url("/images/background.png");
 }
 .skip{
     position: absolute;
     top: -40px;
 }
 main{
-    background-color:white;
     margin-bottom: 110px;
 }
 img{
-    max-width: 300px;
+    width: 600px;
 }
 
 /* Header and Nav */
 header{
-    background-color: lavender;
+    background-color: #EFEFE5;
 }
 nav img{
-    width: 250px;
+    width: 150px;
 }
 nav {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto ;
-    margin: 20px;
+    
 }
 nav ul{
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
-    margin-top: 60px;
-    grid-area: 1 / 3 / span 4 / span 1;
+    margin: 30px;
+    text-align: right;
+    
 }
 nav ul li a {
-    color: green;
+    color: black;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 16pt;
     padding: 4px;
-    align-items: center;
 }
 #grid-title{
+    display: none;
     grid-area: 1 / 2;
 }
 #grid-description{
     grid-area: 2 / 2;
-    display: flex;
+    display: none;
 }
 #grid-logo{
-    grid-area: 1 / 1 / span 4 ;
+    grid-area: 1 / 1 ;
 }
 #activepage{
-    color: indigo;
+    color: #4A6B6E;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 
 
 /* footer */
 footer {
-    background-color: #02473A;
+    background-color: #4A6B6E;
     position: fixed;
     width: 100%;
-    bottom: 0;
-    left: 0;
+    padding: 5px;
     text-align: center;
-    z-index: -100;
+    bottom: 0;
 }
 h6{
     color: white;
     font-size: 20px;
 }
+
+
 .gallery{
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -83,24 +87,25 @@ h6{
 /* work page content */
 .container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: auto auto auto;
     margin: 40px;
     padding: 10px;
 }
 #burchfield-image{
-    grid-area: 1 / 2;
 }
 #burchfield-text{
-    grid-area: 1 / 3;
 }
 .content-image{
     padding: 10px;
     box-align: right;
+    margin: auto;
 }
 .content-text{
     padding: 10px;
-    text-align: left;
-    
+    text-align: center;
+    margin: auto;
+
+}
+
+@media screen and (min-width: 800px){
 
 }
