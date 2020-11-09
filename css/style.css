@@ -5,6 +5,7 @@ body {
     background-color:white;
     font-family: Avenir, sans-serif;
     background-image: url("/images/background.png");
+    text-align: center;
 }
 .skip{
     position: absolute;
@@ -99,7 +100,6 @@ h6{
 
 .content-image{
     padding: 10px;
-    box-align: right;
     margin: auto;
 }
 .content-text{
@@ -153,6 +153,9 @@ h6{
     .container{
         grid-template-columns: 1fr 2fr 2fr 1fr;
     }
+    .content-text{
+        text-align: left;
+    }
     #burchfield-image{
         grid-area: 1 / 2;
     }
@@ -163,7 +166,7 @@ h6{
         grid-area: 2 / 2;
     }
     #naturerx-text{
-        grid-area: 2 / 3;
+        grid-area: 2 / 3 ;
     }
 }
 
