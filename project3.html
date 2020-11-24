@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>The Caring Pot</title>
+    </head>
+    <body>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <header>
+            <nav>
+                <div id="grid-logo">
+                    <a href= "index.html"><img src="images/logo.png" alt="logo" id="logo"></a>
+                </div>
+                <div>
+                    <ul style="list-style-type:none;">      
+                        <li> <a href="index.html">Work</a> </li>
+                        <li> <a href="photo.html">Photo</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id= "main">
+            <h1>The Caring Pot</h1>
+            <img src="images/plant.PNG" alt="Plant System Illustration">
+            <h2>MicroProcessor Plant Watering System Prototype - Spring 2020</h2>
+            <p>
+                ENTR 390, a class I took my shophomore year, asked us to ideate and create a product using a microprocessor. 
+                Our project had to solve a problem people might face often. Some student chose boxes that rewarded the user for 
+                daily habits, others created garage door timers, I chose to make a plant watering system. I have a lot plants but 
+                I have always been terrible at knowing when my plants need to be watered, so I created a system that automatically waters. 
+                But unlike most systems, this doesn't work off of a timer, but from a soil moisture sensor. It only waters when the plant 
+                actually needs water. 
+            </p>
+            <h3>Goal</h3>
+            <p id="goal"> 
+                To create a rough prototype of a product using microprocessors. 
+            </p>
+            
+            <h3>Design</h3>
+            <p>
+             Below are the drawing I made going through the split views of the product. The container for the system was
+             envisioned to be a cylindrical planter with one side housing all the hardware and water resevoir above it. The design of 
+             the tank is supposed allow for sunlight on one side of the plant and water from the other.The caring pot is designed to alleviate 
+             the stress of taking care of your small houseplants. The pot can be calibrated to fit the needs of your specific plant, and 
+             look stylish and modern on any shelf or window sill. 
+            </p>
+            <img src = 'images/plant/sideview.PNG' alt="side view of the planter">
+            <div id="burchfield-gallery">
+            <img src = 'images/plant/topview.PNG' alt="top view of the planter">
+            <img src = 'images/plant/topviewcapoff.PNG' alt="top view of the planter without the tank cap">
+            <img src = 'images/plant/topviewtank.PNG' alt="top view of the planter showing the tank">
+            <img src = 'images/plant/topviewlogics.PNG' alt="top view of the planter under the tank to show wiring">
+            </div>
+            <h3>Hardware</h3>
+            <p>
+                Each of the sensors are to be calibrated to output a reasonable value and wired to ensure 
+                the right amount of power is getting to each component. The pot measures soil moisture, 
+                temperature, and ambient light, then based off the soil moisture value, it will pump water into the pot. 
+                <br><br>
+                The MircoProcessor used is a Particle Photon, measures only and inch and half. The other components include the 
+                sensors for soil,light,and temperature and the pump. The water pump itself can not run off the power provided by the photon. 
+                It requires 12V and the photon can only provide 4.8V. So I needed a 5V 1 channel relay and a 12V power supply to control when the supply would send 
+                power to the pump. Below is a rough sketch of how the whole system is wired. <br> <br> *Wires are not color coded
+            </p>
+            <img src = 'images/plant/wiring.PNG' alt="Wiring of the system">
+            <h3>Conclusion</h3>
+            <img src = 'images/plant/liveimage.JPEG' alt="Photo of the actual system">
+            <p>
+                This project was unfourtunately cut short, both on time and resources due to the COVID-19 pandemic. I had intially planned to design 
+                a 3D printed planter with the tank included and install the handware into that container. I was also going to create an app that
+                the user could use to log their plants health and monitor the temperature and light of the plant to ensure it was in the best location
+                for that specfic plants needs. I also wanted the app to send the user notification for when the tank needed to be refilled or if the 
+                plant's temperature dropped below a certain temperature. 
+
+                With the new skills I have developed over that year I would now be capable of developing a web page for the system to act as a plant 
+                dashboard. Or I could create wireframes of the app I had dreamed up. 
+            </p>
+
+        </main>
+        <footer>
+            <p>ashtho@umich.edu &copy; 2020</p>
+            <!-- add social icons -->
+        </footer>
+    </body>
+</html>
