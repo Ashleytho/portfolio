@@ -120,6 +120,12 @@ footer p{
 #naturerx-text{
     grid-area: 4 / 2 / span 1 / span 2;
 }
+#plant-image{
+    grid-area: 5 / 2 / span 1 / span 2;
+}
+#plant-text{
+    grid-area: 6 / 2 / span 1 / span 2;
+}
 
 .content-image{
     padding: 10px;
@@ -127,8 +133,9 @@ footer p{
 }
 .content-text{
     padding: 10px;
-    text-align: center;
+    text-align: left;
     margin: 0;
+    padding-bottom: 20%;
 }
 .content-text p{
     padding: 0px;
@@ -219,3 +226,71 @@ footer p{
     }
 }   
 
+
+@media screen and (max-width: 430px){
+    
+    #grid-logo{
+        position: fixed;
+    }
+    p{
+        align-content: center;
+        width: 90%;
+        margin: auto;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-right: -80px;
+    }
+    h2{
+        text-align: center;
+        padding: 0%;
+    }
+    .gallery{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .container{
+        grid-template-columns: 1fr 4fr 4fr 1fr;
+    }
+    .content-text{
+        text-align: center;
+        padding: 0%;
+        padding-bottom: 20%;
+        
+    }
+    
+    #burchfield-image{
+        grid-area: 1 / 2/ span 1 / span 2;
+    }
+    #burchfield-text{
+        grid-area: 2 / 2 / span 1 / span 2;
+    }
+    #naturerx-image{
+        grid-area: 3 / 2/ span 1 / span 2;
+    }
+    #naturerx-text{
+        grid-area: 4 / 2 / span 1 / span 2;
+    }
+    #plant-image{
+        grid-area: 5 / 2/ span 1 / span 2;
+    }
+    #plant-text{
+        grid-area: 6 / 2 / span 1 / span 2;
+    }
+    #burchfield-gallery{
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #burchfield-gallery img{
+        max-width: 40%;
+        padding: 10px;
+        align-self: baseline;
+    }
+}
