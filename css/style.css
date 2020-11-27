@@ -17,7 +17,6 @@ p{
     font-size: 25px;
     color: white;
     background-color: #4A6B6E;
-    width: 40%;
 }
 .skip{
     position: absolute;
@@ -43,14 +42,15 @@ nav {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-
+    height: 130px;
 }
 
 nav ul{
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin: 30px;
+    margin: 20px;
+    grid-area: 1/2;
 }
 
 nav ul li a {
@@ -63,6 +63,8 @@ nav ul li a {
 
 #grid-logo{
     grid-area: 1 / 1 ;
+    margin: 25px;
+    text-align: left;
 }
 
 #activepage{
@@ -77,9 +79,22 @@ nav ul li a {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-
-
+#parallax {
+    background-image: url("/images/desktop.JPEG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#parallax img{
+    display: block;
+    position: relative;
+    margin: auto;
+    object-fit: scale-down;
+    object-position: bottom;
+}
 /* footer */
 footer {
     background-color: #4A6B6E;
@@ -176,9 +191,11 @@ footer p{
     nav ul{
         display:flex;
         flex-direction: row;
+        margin: 35px;
     }
     nav{
         justify-content: space-between;
+        
       }
     .gallery{
         padding: 20px;
@@ -229,8 +246,11 @@ footer p{
 
 @media screen and (max-width: 430px){
     
+    #parallax{
+        display: none;
+    }
     #grid-logo{
-        position: fixed;
+        position: absolute;
     }
     p{
         align-content: center;
@@ -240,8 +260,7 @@ footer p{
     nav ul{
         display:flex;
         flex-direction: column;
-        justify-content: end;
-        margin-right: -80px;
+        width: 120%;
     }
     h2{
         text-align: center;
