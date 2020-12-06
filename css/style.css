@@ -177,6 +177,17 @@ footer p{
     width: 60%;
 }
 
+#animation{
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes arrow{
+    0%   {top:0px;}
+    50%  {top: -40px;}
+    100% {top:0px;}
+  }
+
 @media screen and (min-width: 800px){
     
     #burchfield-image{
