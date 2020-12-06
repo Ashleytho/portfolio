@@ -28,6 +28,7 @@ main{
 }
 img{
     width: 600px;
+    padding: 20px;
 }
 
 /* Header and Nav */
@@ -37,6 +38,7 @@ header{
 
 nav img{
     width: 150px;
+    padding: 0%;
 }
 
 nav {
@@ -241,6 +243,27 @@ footer p{
         max-width: 40%;
         padding: 10px;
         align-self: baseline;
+    }
+    #about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    #about img{
+        width: 400px;
+        align-self: center;
+        justify-self: right;
+        padding-right: 30px;
+    }
+    #about-text{
+        text-align: left;
+        justify-self: left;
+        margin-left: 10px;
+
+    }
+    #about-text p{
+        margin: 10px;
+        justify-self: left;
     }
 }   
 
