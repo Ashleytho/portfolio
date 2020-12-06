@@ -197,15 +197,17 @@ footer p{
     padding: 5px;
     text-decoration: none;
 }
+#form-title{
+    margin-bottom: -15px;
+}
+#form{
+    background-color: #EFEFE5;
+    padding: 20px;
+}
 
 @media screen and (min-width: 800px){
     
-    #burchfield-image{
-
-    }
-    #burchfield-text{
-
-    }
+    
     p{
         align-content: center;
         text-align: justify;
