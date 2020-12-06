@@ -6,6 +6,7 @@ body {
     font-family: Avenir, sans-serif;
     /* background-image: url("/images/background.PNG"); */
     text-align: center;
+    
 }
 p{
     margin-right: 30px;
@@ -25,6 +26,7 @@ p{
 main{
     margin-top: 20px;
     margin-bottom: 150px;
+    
 }
 img{
     width: 600px;
@@ -62,6 +64,7 @@ nav ul li a {
     font-size: 16pt;
     padding: 4px;
 }
+
 
 
 #grid-logo{
@@ -103,17 +106,15 @@ footer {
     background-color: #4A6B6E;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 0px;
     padding: 10px;
     margin: auto;
     color: white;
     height: 40px;
 }
 footer p{
-    margin: 0px;
     font-size: 10pt;
     text-align: center;
-    width: auto;
 }
 
 
@@ -186,7 +187,16 @@ footer p{
     0%   {top:0px;}
     50%  {top: -40px;}
     100% {top:0px;}
-  }
+}
+
+.button{
+    background-color: white;
+    color: #4A6B6E;
+    border: 2px solid #4A6B6E;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
 
 @media screen and (min-width: 800px){
     
