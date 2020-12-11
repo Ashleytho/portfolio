@@ -288,6 +288,11 @@ footer p{
         margin: 10px;
         justify-self: left;
     }
+    #form{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
 }   
 
 
@@ -360,3 +365,12 @@ footer p{
         align-self: baseline;
     }
 }
+@media screen and (prefers-reduced-motion: reduce){
+    #animation{
+        animation-duration: 0s;       
+     }
+  
+     #parallax{
+      background-attachment: initial;
+    }
+  }
