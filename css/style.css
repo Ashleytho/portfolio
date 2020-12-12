@@ -235,7 +235,7 @@ footer p{
   }
   
   .flip-card-front {
-    background-image: url("/images/resources.JPG");
+    background-image: url("../images/resources.JPG");
     background-position: right;
     color:  #EFEFE5;
     text-align: center;
