@@ -8,11 +8,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:#EFEFE5;
+    background-color: white;
     font-family: Avenir, sans-serif;
     /* background-image: url("/images/background.PNG"); */
     text-align: center;
     
+}
+#construction{
+    margin: auto;
+    padding-top: 10%;
 }
 p{
     margin-right: 30px;
@@ -44,7 +48,7 @@ img{
 
 /* Header and Nav */
 header{
-    background-color: #EFEFE5;
+    background-color: white;
 }
 
 nav img{
